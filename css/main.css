@@ -175,6 +175,8 @@ align-items: flex-start;
 margin: 0 auto;
 }
 
+
+
 #CTA1,
 #CTA2,
 #CTA3{
@@ -184,6 +186,7 @@ margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 10px;
 
 }
 /* End CTA Section */
@@ -193,8 +196,27 @@ margin: 0 auto;
 .Leadership_Section{
   background-color: #FBFFFE;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sectionbox_leadership h2{
+  text-shadow: 2px 2px #dadada;
 }
 
+.asterik_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title{
+  font-weight: 700;
+  text-decoration: underline;
+}
 /* End Leadership Section */
 
 /* Begin Info Section */
@@ -202,6 +224,10 @@ margin: 0 auto;
 .Info_Section{
   background-color: #FCFFF5;
   padding: 10px;
+}
+
+.buffer{
+  margin: 2rem;
 }
 
 /* End Info Section */
@@ -224,6 +250,31 @@ footer p{
   font-weight: 300;
 }
 /* End Footer */
+
+@media screen and (max-width: 768px) {
+  .sectionbox{
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.buffer p{
+  text-align: center;
+}
+
+.buffer h2{
+  text-align: center;
+}
+.mobile_nav_icon{
+  display: block;
+  font-size: 30px;
+}
+
+nav{
+  display: none;
+}
+
+}
 
 /* ==========================================================================
    Helper classes
